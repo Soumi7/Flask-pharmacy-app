@@ -1,0 +1,43 @@
+<html>
+<head>  
+
+<style>
+h1 {text-align:center;}
+p {text-align:center;}
+body {background-image: url("https://previews.123rf.com/images/volody10/volody101901/volody10190100268/116355849-scattered-white-pills-on-blue-table-mock-up-for-special-offers-as-advertising-web-background-or-othe.jpg");
+
+</style>
+
+<h1> 
+  Medicine App
+</h1> </head>
+
+
+</head>
+  <body>
+  <hr>
+   <b> <h1>  Add Medicine  </h1> </b>
+  <hr>
+    
+    <form method="POST" action="/"> <p>
+      <input type="text" name="name">
+      <input type="submit" value="Add"> 
+    </p>
+    </form>
+    
+   <p>
+  <form method="POST" action="./delete">
+   <p>
+      <input type="text" name="name">
+      <input type="submit" value="Delete">
+    </p>
+    </form>
+</p>
+    <hr>
+   <h1> Medicines </h1>
+   {% for medicine in medicines %}
+   <b><p>{{medicine.name}}</p>
+   {% endfor %}
+  <hr>
+  </body>
+</html>

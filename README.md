@@ -1,5 +1,5 @@
 # Flask-pharmacy-app
-A l flask application with sql alchemy as orm
+A **Flask** application with **SQL Alchemy** as **Object Relational Mapper(ORM)**
 
 The web page displays the names of the medicines you store in the database
 

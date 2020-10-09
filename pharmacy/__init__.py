@@ -6,7 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask import redirect
 
 project_dir = os.path.dirname(os.path.abspath(__file__))
-database_file = "sqlite:///{}".format(os.path.join(project_dir, "medidatabase.db"))
+database_file = "sqlite:///{}".format(os.path.join(project_dir, "../medidatabase.db"))
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = database_file
@@ -37,6 +37,4 @@ def delete():
     return redirect("/")
 
 if __name__ == "__main__":
-    app.run(debug=True)
-
-
+    app.run()
